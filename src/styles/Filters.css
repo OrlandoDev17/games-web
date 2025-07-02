@@ -1,0 +1,80 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #202938;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.filters h3 {
+  padding-inline: 40px;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-inline: 40px;
+  padding-bottom: 30px;
+}
+
+.search-filter {
+  position: relative;
+}
+
+.search-filter > input {
+  width: 100%;
+  padding-block: 10px;
+  border-radius: 5px;
+  background-color: #384152;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 45px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #797878;
+}
+
+.search-filter > input::placeholder {
+  color: #797878;
+}
+
+.search-filter > input:focus {
+  outline: #4c7de6 1px solid;
+}
+
+.select-filter {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border-radius: 8px;
+  background-color: #384152;
+  border: 2px solid #4b5563;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-filter:hover {
+  border-color: #6b7280;
+  background-color: #4b5563;
+}
+.select-filter:focus {
+  outline: none;
+  border-color: #4c7de6;
+  box-shadow: 0 0 0 3px rgba(76, 125, 230, 0.3);
+}
