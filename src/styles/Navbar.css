@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 40px;
-  background: #23283B;
+  background: #23283b;
 }
 
 .navbar-logo {
@@ -37,19 +37,19 @@
 }
 
 .navbar-link.active {
-  color: #3B4CCA;
-  background: #22335A;
+  color: #3b4cca;
+  background: #22335a;
 }
 
 .navbar-link:hover {
-  background: #181C24;
-  color: #FFD700;
+  background: #181c24;
+  color: #ffd700;
 }
 
 .navbar-btn {
-  border: 1px solid #3B4CCA;
+  border: 1px solid #3b4cca;
   background: transparent;
-  color: #3B4CCA;
+  color: #3b4cca;
   border-radius: 8px;
   padding: 6px 18px;
   font-weight: 500;
@@ -57,10 +57,11 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
   transition: background 0.2s, color 0.2s;
 }
 
 .navbar-btn:hover {
-  background: #3B4CCA;
+  background: #3b4cca;
   color: #fff;
-} 
+}

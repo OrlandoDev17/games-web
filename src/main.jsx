@@ -5,20 +5,21 @@ import App from "./App.jsx";
 import Auth from "./pages/Auth.jsx";
 import Catalogue from "./pages/Catalogue.jsx";
 import Favorites from "./pages/Favorites.jsx";
+// Components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+// Styles
+import "./styles/Index.css";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
+    <Navbar />
     <Routes>
       <Route path="/" element={<App />} />
-    </Routes>
-    <Routes>
       <Route path="/auth" element={<Auth />} />
-    </Routes>
-    <Routes>
       <Route path="/catalogue" element={<Catalogue />} />
-    </Routes>
-    <Routes>
       <Route path="/favorites" element={<Favorites />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );

@@ -1,37 +1,29 @@
-body{
-  font-family: Sans-Serif;
-  background-color: #1a1a38;
-}
-
-.favorite-page{
+.favorite-page {
   font-size: 20px;
-  background-color: #1a1a38;
   color: #e0e0e0;
-  min-height: 1000vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
   box-sizing: border-box;
 }
 
-.favorite-page h2{
+.favorite-page h2 {
   font-size: 3.3em;
   color: #ffffff;
   margin-bottom: 10px;
   font-weight: 700;
 }
-  
-  
-.favorite-page .subtitle{
+
+.favorite-page .subtitle {
   height: 25vh;
   font-size: 1.2em;
-  color: #b0b0b0; 
+  color: #b0b0b0;
   margin-top: 0;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
-
-.center-icon-svg{
+.center-icon-svg {
   display: none;
   flex-direction: center;
   justify-content: center;
@@ -40,7 +32,7 @@ body{
   font-size: 100px;
 }
 
-.icon-svg{
+.icon-svg {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +47,7 @@ body{
   height: 0.8em;
 }
 
-.no-favorite-page{
+.no-favorite-page {
   display: none;
   justify-content: center;
   flex-direction: column;
@@ -64,12 +56,12 @@ body{
   margin: 5px;
 }
 
-.no-favorite-page > p{
+.no-favorite-page > p {
   text-align: center;
   max-width: 400px;
 }
 
-.button-container > button{
+.button-container > button {
   font-family: Sans-Serif;
   background-color: #8739d4;
   color: #ffffff;

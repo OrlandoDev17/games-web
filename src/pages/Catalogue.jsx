@@ -16,7 +16,7 @@ export default function Catalogue() {
       return (
         filters.genre === "all" ||
         (game.genre === filters.genre && filters.platform === "all") ||
-        game.platform.includes(filters.platform)
+        game.platform === filters.platform
       );
     });
   };

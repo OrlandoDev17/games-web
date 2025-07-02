@@ -26,13 +26,13 @@
 
 .search-filter > input {
   width: 100%;
-  padding-block: 10px;
-  border-radius: 5px;
+  padding: 12px 20px 12px 45px;
+  border-radius: 8px;
   background-color: #384152;
-  border: none;
+  border: 2px solid #4b5563;
   color: #fff;
   font-size: 1rem;
-  padding-left: 45px;
+  transition: all 0.3s ease;
 }
 
 .search-icon {

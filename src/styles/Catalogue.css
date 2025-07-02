@@ -1,13 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
 .catalogue-container {
   display: flex;
   flex-direction: column;
-  background-color: #020712;
   color: #fff;
   padding: 20px 60px;
 }

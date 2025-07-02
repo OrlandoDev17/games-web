@@ -1,11 +1,21 @@
-import { FaGamepad, FaHome, FaRegStar, FaThList, FaUser } from 'react-icons/fa';
-import '../assets/navbar.css';
+import { FaGamepad, FaHome, FaRegStar, FaThList, FaUser } from "react-icons/fa";
+import "../styles/Navbar.css";
 
 export default function Navbar({ selected = "inicio" }) {
   const navItems = [
-    { key: "inicio", label: "Inicio", icon: <FaHome /> },
-    { key: "catalogo", label: "Catálogo", icon: <FaThList /> },
-    { key: "favoritos", label: "Favoritos", icon: <FaRegStar /> },
+    { href: "/", key: "inicio", label: "Inicio", icon: <FaHome /> },
+    {
+      href: "/catalogue",
+      key: "catalogo",
+      label: "Catálogo",
+      icon: <FaThList />,
+    },
+    {
+      href: "/favorites",
+      key: "favoritos",
+      label: "Favoritos",
+      icon: <FaRegStar />,
+    },
   ];
 
   return (
@@ -15,20 +25,22 @@ export default function Navbar({ selected = "inicio" }) {
         <span className="navbar-title">GameHub</span>
       </div>
       <div className="navbar-links">
-        {navItems.map(item => (
+        {navItems.map((item) => (
           <a
             key={item.key}
-            href="#"
-            className={selected === item.key ? "navbar-link active" : "navbar-link"}
+            href={item.href}
+            className={
+              selected === item.key ? "navbar-link active" : "navbar-link"
+            }
           >
             {item.icon}
             {item.label}
           </a>
         ))}
       </div>
-      <button className="navbar-btn">
+      <a className="navbar-btn" href="/auth">
         <FaUser /> Iniciar Sesión
-      </button>
+      </a>
     </nav>
   );
-} 
+}
