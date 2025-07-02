@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div>Home Page</div>
+      <div>Home menu</div>
     </>
   );
 }
