@@ -1,4 +1,7 @@
 import "../styles/FavoritePage.css";
+import "../styles/Card.css";
+import "../components/FavoriteCard.jsx"
+
 export default function Favorites() {
   return (
     <>
@@ -7,8 +10,8 @@ export default function Favorites() {
           Mis Favoritos{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
+            width="34"
+            height="34"
             viewBox="0 0 24 24"
             fill="currentColor"
             class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
@@ -52,36 +55,43 @@ export default function Favorites() {
             <button>Explorar Catálogo</button>
           </div>
         </div>
-
-        <div className="Cards-games">
-          <div className="game-image-placeholder">
-            <img
-              src="/src/img/CyberPunk.jpeg"
-              alt="Imagen del Juego"
-              width="320"
-              height="190"
-            />
-          </div>
-
-          <div className="game-info">
-            <h3>CyberPunk 2077</h3>
-
-            <spam>CD Projekt RED</spam>
-
-            <p className="game-tags">Género RPG | Plataforma PC</p>
-
-            <p className="game-year">Año 2077</p>
-
-            <div className="card-actions">
-              <button className="download-button">Descargar Gratis</button>
-
-              <button className="remove-button">
-                <span className="trash-icon">🗑️</span>
-              </button>
-            </div>
-          </div>
+        
+        <div className="favoritecard">
+        <div className="game-image-placeholder">
+        <img src="/public/images/SpiderManMilesMorales.webp" alt="Imagen del Juego" style={{ width: '320px', height: '190' }}/>
+        <div className="game-info">
+        <h3>SpiderManMilesMorales</h3>
+        <p>Sony</p>
+        <p className="game-tags">Género Acción Aventura| Plataforma Playstation</p>
+        <p className="game-year">2020</p>
+        <div className="card-actions">
+        <button className="Details-button">Detalles de Juego</button>
+        <button className="remove-button">
+        <span className="trash-icon">🗑️</span>
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div className="favoritecard">
+        <div className="game-image-placeholder">
+        <img src="/public/images/AssassinsCreedValhalla.webp" alt="Imagen del Juego" style={{ width: '320px', height: '190' }}/>
+        <div className="game-info">
+        <h3>AssassinsCreedValhalla</h3>
+        <p>Ubisoft</p>
+        <p className="game-tags">Género Acción Aventura RPG| Plataforma Playstation Xbox PC</p>
+        <p className="game-year">2020</p>
+        <div className="card-actions">
+        <button className="Details-button">Detalles de Juego</button>
+        <button className="remove-button">
+        <span className="trash-icon">🗑️</span>
+        </button>
+        </div>
+        </div>
+        </div>
         </div>
       </section>
     </>
-  );
+  )
 }
