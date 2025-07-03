@@ -5,16 +5,19 @@ Una aplicación web moderna para explorar y guardar tus videojuegos favoritos. L
 ## 🚀 Cómo funciona
 
 ### 1. Autenticación
+
 - Los usuarios pueden registrarse con un nombre de usuario y contraseña
 - Iniciar sesión con credenciales válidas
 - La sesión se mantiene activa mientras el navegador esté abierto
 
 ### 2. Catálogo de Juegos
+
 - Explora una amplia variedad de videojuegos
 - Filtra juegos por género y plataforma
 - Interfaz intuitiva y fácil de usar
 
 ### 3. Favoritos
+
 - Guarda tus juegos favoritos para acceder rápidamente a ellos
 - Visualiza todos tus juegos guardados en una sola vista
 - Interfaz atractiva con iconos intuitivos
@@ -44,17 +47,20 @@ src/
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
+
    ```bash
    git clone https://github.com/tu-usuario/games-web.git
    cd games-web
    ```
 
 2. Instala las dependencias:
+
    ```bash
    npm install
    ```
 
 3. Inicia el servidor de desarrollo:
+
    ```bash
    npm run dev
    ```
