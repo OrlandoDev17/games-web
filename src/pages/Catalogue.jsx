@@ -13,11 +13,26 @@ export default function Catalogue() {
 
   const filterGames = (games) => {
     return games.filter((game) => {
-      return (
-        filters.genre === "all" ||
-        (game.genre === filters.genre && filters.platform === "all") ||
-        game.platform === filters.platform
-      );
+      // Verificar el filtro de género
+      const genreMatch = filters.genre === "all" || game.genre === filters.genre;
+      
+      // Verificar el filtro de plataforma
+      let platformMatch = false;
+      if (filters.platform === "all") {
+        platformMatch = true;
+      } else if (Array.isArray(game.platform)) {
+        // Si la plataforma es un array, verificar si incluye la plataforma seleccionada
+        platformMatch = game.platform.some(platform => 
+          typeof platform === 'string' && 
+          platform.toLowerCase().includes(filters.platform.toLowerCase())
+        );
+      } else {
+        // Si es un string, comparar directamente
+        platformMatch = game.platform.toLowerCase().includes(filters.platform.toLowerCase());
+      }
+      
+      // Deben coincidir ambos filtros
+      return genreMatch && platformMatch;
     });
   };
 
