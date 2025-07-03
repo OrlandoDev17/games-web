@@ -1,10 +1,10 @@
-import { useState } from "react";
-
 import "../styles/Card.css";
 import { StarIcon } from "./Icons";
 import { HeartIcon, HeartFillIcon } from "./Icons";
+import { useFavorites } from "../context/FavoriteContext";
 
 export default function Card({
+  id,
   image,
   rating,
   name,
@@ -13,11 +13,7 @@ export default function Card({
   year,
   platform,
 }) {
-  const [isFavorite, setIsFavorite] = useState(false);
-
-  const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite);
-  };
+  const { favorites, toggleFavorite } = useFavorites();
 
   return (
     <article className="card">
@@ -27,8 +23,8 @@ export default function Card({
           <span className="card-rating">
             <StarIcon className="card-star-icon" /> {rating}
           </span>
-          <button onClick={handleFavoriteClick} className="card-favorite">
-            {isFavorite ? (
+          <button onClick={() => toggleFavorite(id)} className="card-favorite">
+            {favorites.includes(id) ? (
               <HeartFillIcon className="card-heart-icon-fill" />
             ) : (
               <HeartIcon className="card-heart-icon" />
