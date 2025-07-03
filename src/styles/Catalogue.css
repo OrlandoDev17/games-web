@@ -13,3 +13,11 @@
   font-size: 1rem;
   color: #9c9b9b;
 }
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 380px);
+  gap: 40px;
+  place-content: center;
+  margin-top: 40px;
+}

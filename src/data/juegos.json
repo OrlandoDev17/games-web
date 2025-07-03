@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "god-of-war-2018",
     "name": "God of War (2018)",
     "description": "Kratos deja atrás su pasado violento y emprende un viaje junto a su hijo Atreus por tierras nórdicas, enfrentando dioses, monstruos y sus propios demonios internos en una experiencia intensa y emocional.",
     "image": "/images/Gow2018.webp",
@@ -8,12 +8,11 @@
     "release_date": "2018-04-20",
     "platform": "PlayStation",
     "rating": 9.5,
-    "favorite": false,
     "year": "2018",
     "developers": "Santa Monica Studio"
   },
   {
-    "id": 2,
+    "id": "god-of-war-ragnarok",
     "name": "God of War Ragnarok",
     "description": "Kratos y Atreus deben enfrentar el fin del mundo mientras luchan contra fuerzas mitológicas y descubren verdades sobre su destino en esta poderosa secuela del aclamado God of War.",
     "image": "/images/GowRagnarok.webp",
@@ -21,12 +20,11 @@
     "release_date": "2022-11-09",
     "platform": "PlayStation",
     "rating": 9.7,
-    "favorite": false,
     "year": "2022",
     "developers": "Santa Monica Studio"
   },
   {
-    "id": 3,
+    "id": "star-wars-jedi-fallen-order",
     "name": "Star Wars Jedi: Fallen Order",
     "description": "Después de la Orden 66, Cal Kestis, un joven Padawan, escapa del Imperio y emprende un peligroso viaje para restaurar la Orden Jedi mientras aprende a dominar la Fuerza.",
     "image": "/images/SWJediFallenOrder.webp",
@@ -34,12 +32,11 @@
     "release_date": "2019-11-15",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 8.5,
-    "favorite": false,
     "year": "2019",
     "developers": "Respawn Entertainment"
   },
   {
-    "id": 4,
+    "id": "star-wars-jedi-survivor",
     "name": "Star Wars Jedi: Survivor",
     "description": "Cal Kestis regresa en una nueva aventura donde debe luchar por sobrevivir y resistir al Imperio, enfrentando nuevos enemigos y aliados en la galaxia.",
     "image": "/images/SWJediSurvivor.webp",
@@ -47,12 +44,11 @@
     "release_date": "2023-04-28",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 8.9,
-    "favorite": false,
     "year": "2023",
     "developers": "Respawn Entertainment"
   },
   {
-    "id": 5,
+    "id": "the-witcher-3-wild-hunt",
     "name": "The Witcher 3: Wild Hunt",
     "description": "Geralt de Rivia, un cazador de monstruos, busca a su hija adoptiva mientras recorre un mundo abierto lleno de criaturas, guerras y elecciones morales complejas.",
     "image": "/images/TheWitcher3.webp",
@@ -68,12 +64,11 @@
       "Nintendo Switch"
     ],
     "rating": 9.8,
-    "favorite": false,
     "year": "2015",
     "developers": "CD Projekt Red"
   },
   {
-    "id": 6,
+    "id": "resident-evil-4-remake",
     "name": "Resident Evil 4 Remake",
     "description": "Leon S. Kennedy regresa para una misión de rescate en una remota aldea europea, enfrentando horrores renovados en esta moderna reinvención del clásico de terror.",
     "image": "/images/ResidentEvil4.webp",
@@ -81,12 +76,11 @@
     "release_date": "2023-03-24",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 9.4,
-    "favorite": false,
     "year": "2023",
     "developers": "Capcom"
   },
   {
-    "id": 7,
+    "id": "the-last-of-us-part-ii",
     "name": "The Last of Us Part II",
     "description": "Ellie continúa su historia en un mundo devastado por una pandemia, enfrentando el ciclo de la venganza y las consecuencias emocionales de sus decisiones.",
     "image": "/images/TLOU2.webp",
@@ -94,12 +88,11 @@
     "release_date": "2020-06-19",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 9.3,
-    "favorite": false,
     "year": "2020",
     "developers": "Naughty Dog"
   },
   {
-    "id": 8,
+    "id": "red-dead-redemption-2",
     "name": "Red Dead Redemption 2",
     "description": "Arthur Morgan, un forajido del Lejano Oeste, lucha por sobrevivir y mantener su código de honor mientras su banda se desmorona y el mundo cambia.",
     "image": "/images/RDR2.webp",
@@ -107,12 +100,11 @@
     "release_date": "2018-10-26",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 9.7,
-    "favorite": false,
     "year": "2018",
     "developers": "Rockstar Games"
   },
   {
-    "id": 9,
+    "id": "elden-ring",
     "name": "Elden Ring",
     "description": "Un extenso mundo abierto lleno de peligros, secretos y desafíos espera al Sinluz, guiado por la gracia en busca del Círculo de Elden.",
     "image": "/images/EldenRing.webp",
@@ -120,12 +112,11 @@
     "release_date": "2022-02-25",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 9.6,
-    "favorite": false,
     "year": "2022",
     "developers": "FromSoftware"
   },
   {
-    "id": 10,
+    "id": "cyberpunk-2077",
     "name": "Cyberpunk 2077",
     "description": "Sumérgete en Night City, una metrópolis futurista donde jugarás como V, un mercenario que busca una pieza única de tecnología que promete la inmortalidad.",
     "image": "/images/Cyberpunk2077.webp",
@@ -133,12 +124,11 @@
     "release_date": "2020-12-10",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 8.2,
-    "favorite": false,
     "year": "2020",
     "developers": "CD Projekt Red"
   },
   {
-    "id": 11,
+    "id": "horizon-forbidden-west",
     "name": "Horizon Forbidden West",
     "description": "Aloy viaja a tierras inexploradas del oeste para descubrir los secretos detrás de una amenaza que pone en peligro el planeta.",
     "image": "/images/HorizonFW.webp",
@@ -146,12 +136,11 @@
     "release_date": "2022-02-18",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 8.9,
-    "favorite": false,
     "year": "2022",
     "developers": "Guerrilla Games"
   },
   {
-    "id": 12,
+    "id": "spider-man-miles-morales",
     "name": "Spider-Man: Miles Morales",
     "description": "Miles toma el relevo de Peter Parker como el nuevo Spider-Man, enfrentando enemigos y descubriendo su propia identidad heroica en Nueva York.",
     "image": "/images/SpiderManMilesMorales.webp",
@@ -159,12 +148,11 @@
     "release_date": "2020-11-12",
     "platform": "PlayStation",
     "rating": 8.5,
-    "favorite": false,
     "year": "2020",
     "developers": "Insomniac Games"
   },
   {
-    "id": 13,
+    "id": "ghost-of-tsushima",
     "name": "Ghost of Tsushima",
     "description": "Jin Sakai, un samurái honorable, debe abrazar tácticas de guerra poco ortodoxas para salvar su tierra natal de la invasión mongola.",
     "image": "/images/GhostOfTsushima.webp",
@@ -172,12 +160,11 @@
     "release_date": "2020-07-17",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 9.2,
-    "favorite": false,
     "year": "2020",
     "developers": "Sucker Punch Productions"
   },
   {
-    "id": 14,
+    "id": "bloodborne",
     "name": "Bloodborne",
     "description": "Explora la gótica ciudad de Yharnam plagada de criaturas lovecraftianas mientras descubres oscuros secretos y enfrentas terrores indescriptibles.",
     "image": "/images/Bloodborne.webp",
@@ -185,12 +172,11 @@
     "release_date": "2015-03-24",
     "platform": "PlayStation",
     "rating": 9.1,
-    "favorite": false,
     "year": "2015",
     "developers": "FromSoftware"
   },
   {
-    "id": 15,
+    "id": "sekiro-shadows-die-twice",
     "name": "Sekiro: Shadows Die Twice",
     "description": "Juega como un shinobi con un brazo prostético mientras busca venganza en un Japón alternativo lleno de enemigos sobrenaturales y letales.",
     "image": "/images/SekiroSDT.webp",
@@ -198,12 +184,11 @@
     "release_date": "2019-03-22",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 9.2,
-    "favorite": false,
     "year": "2019",
     "developers": "FromSoftware"
   },
   {
-    "id": 16,
+    "id": "final-fantasy-vii-remake",
     "name": "Final Fantasy VII Remake",
     "description": "Cloud Strife y sus aliados luchan contra la megacorporación Shinra en una historia que combina drama, acción y magia en Midgar.",
     "image": "/images/FinalFantasyVII.webp",
@@ -211,12 +196,11 @@
     "release_date": "2020-04-10",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 9.0,
-    "favorite": false,
     "year": "2020",
     "developers": "Square Enix"
   },
   {
-    "id": 17,
+    "id": "assassins-creed-valhalla",
     "name": "Assassin’s Creed Valhalla",
     "description": "Eivor, un vikingo, lidera a su clan desde Noruega hasta Inglaterra, enfrentando reinos enemigos y forjando alianzas políticas.",
     "image": "/images/AssassinsCreedValhalla.webp",
@@ -224,12 +208,11 @@
     "release_date": "2020-11-10",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 8.3,
-    "favorite": false,
     "year": "2020",
     "developers": "Ubisoft"
   },
   {
-    "id": 18,
+    "id": "death-stranding",
     "name": "Death Stranding",
     "description": "Sam Bridges debe reconectar los Estados Unidos transportando cargas vitales en un paisaje postapocalíptico y enfrentando criaturas sobrenaturales.",
     "image": "/images/DeathStranding.webp",
@@ -237,12 +220,11 @@
     "release_date": "2019-11-08",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 8.6,
-    "favorite": false,
     "year": "2019",
     "developers": "Kojima Productions"
   },
   {
-    "id": 19,
+    "id": "marvels-spider-man",
     "name": "Marvel’s Spider-Man",
     "description": "Peter Parker protege Nueva York de villanos icónicos mientras equilibra su vida personal y sus responsabilidades como Spider-Man.",
     "image": "/images/MarvelSpiderMan.webp",
@@ -250,12 +232,11 @@
     "release_date": "2018-09-07",
     "platform": ["PlayStation", "/ ", "PC"],
     "rating": 9.0,
-    "favorite": false,
     "year": "2018",
     "developers": "Insomniac Games"
   },
   {
-    "id": 20,
+    "id": "control",
     "name": "Control",
     "description": "Jesse Faden explora la misteriosa Casa Inmemorial, descubriendo secretos paranormales y enfrentando entidades con poderes sobrenaturales.",
     "image": "/images/Control.webp",
@@ -263,7 +244,6 @@
     "release_date": "2019-08-27",
     "platform": ["PlayStation", "/ ", "Xbox", "/ ", "PC"],
     "rating": 8.7,
-    "favorite": false,
     "year": "2019",
     "developers": "Remedy Entertainment"
   }
