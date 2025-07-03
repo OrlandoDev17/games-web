@@ -1,6 +1,5 @@
-import "../styles/FavoritePage.css";
-import "../styles/Card.css";
-import "../components/FavoriteCard.jsx"
+import '../styles/FavoritePage.css'
+import FavoriteCards from "../components/FavoriteCards";
 
 export default function Favorites() {
   return (
@@ -55,43 +54,9 @@ export default function Favorites() {
             <button>Explorar Catálogo</button>
           </div>
         </div>
-        
-        <div className="favoritecard">
-        <div className="game-image-placeholder">
-        <img src="/public/images/SpiderManMilesMorales.webp" alt="Imagen del Juego" style={{ width: '320px', height: '190' }}/>
-        <div className="game-info">
-        <h3>SpiderManMilesMorales</h3>
-        <p>Sony</p>
-        <p className="game-tags">Género Acción Aventura| Plataforma Playstation</p>
-        <p className="game-year">2020</p>
-        <div className="card-actions">
-        <button className="Details-button">Detalles de Juego</button>
-        <button className="remove-button">
-        <span className="trash-icon">🗑️</span>
-        </button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div className="favoritecard">
-        <div className="game-image-placeholder">
-        <img src="/public/images/AssassinsCreedValhalla.webp" alt="Imagen del Juego" style={{ width: '320px', height: '190' }}/>
-        <div className="game-info">
-        <h3>AssassinsCreedValhalla</h3>
-        <p>Ubisoft</p>
-        <p className="game-tags">Género Acción Aventura RPG| Plataforma Playstation Xbox PC</p>
-        <p className="game-year">2020</p>
-        <div className="card-actions">
-        <button className="Details-button">Detalles de Juego</button>
-        <button className="remove-button">
-        <span className="trash-icon">🗑️</span>
-        </button>
-        </div>
-        </div>
-        </div>
-        </div>
+
+        <FavoriteCards />
       </section>
     </>
-  )
+  );
 }
