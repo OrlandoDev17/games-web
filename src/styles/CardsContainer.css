@@ -1,7 +1,0 @@
-.catalogue-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 380px);
-  gap: 40px;
-  place-content: center;
-  margin-top: 40px;
-}
