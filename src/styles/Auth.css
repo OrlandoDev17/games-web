@@ -73,7 +73,7 @@ button:focus {
 }
 
 .auth-tab.active {
-  /* background: #181C24; */
+  background: #181c24;
 }
 
 .auth-tab:hover {
