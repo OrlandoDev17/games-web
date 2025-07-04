@@ -1,0 +1,9 @@
+.favorite-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1.1fr));
+  gap: 18px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  width: 1014px;
+}
