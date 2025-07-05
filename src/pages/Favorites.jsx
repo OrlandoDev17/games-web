@@ -1,5 +1,8 @@
 import FavoriteCard from "../components/FavoriteCard";
 import "../styles/FavoritePage.css";
+import "../styles/FavoriteCardsGrid.css";
+import "../styles/Footer.css";
+import "../styles/Navbar.css";
 import { useFavorites } from "../context/FavoriteContext";
 export default function Favorites() {
   const { favorites } = useFavorites();
@@ -41,8 +44,8 @@ export default function Favorites() {
               click en el corazón
             </p>
 
-            <div className="button-container">
-              <button>Explorar Catálogo</button>
+            <div>
+              <a href="/Catalogue" className="button-catalogue">Explorar Catálogo</a>
             </div>
           </div>
         </>
