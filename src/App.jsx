@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./styles/App.css";
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
           </p>
         </div>
         <div className="botones-contenerdor-home">
-          <a href="/Catalogue" className="boton-home">
+          <Link to="/catalogue" className="boton-home">
             Explorar Catálogo
-          </a>
-          <a href="/auth" className="boton-home">
+          </Link>
+          <Link to="/auth" className="boton-home">
             Crear Cuenta
-          </a>
+          </Link>
         </div>
         <div className="bajo-boton-home">
           <div className="imagenes-container">

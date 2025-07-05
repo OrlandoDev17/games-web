@@ -1,6 +1,7 @@
 import FavoriteCard from "../components/FavoriteCard";
 import "../styles/FavoritePage.css";
 import { useFavorites } from "../context/FavoriteContext";
+import { Link } from "react-router";
 export default function Favorites() {
   const { favorites } = useFavorites();
   return (
@@ -42,9 +43,9 @@ export default function Favorites() {
             </p>
 
             <div>
-              <a href="/catalogue" className="button-catalogue">
+              <Link to="/catalogue" className="button-catalogue">
                 Explorar Catálogo
-              </a>
+              </Link>
             </div>
           </div>
         </>
