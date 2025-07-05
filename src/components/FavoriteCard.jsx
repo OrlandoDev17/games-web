@@ -1,4 +1,5 @@
 import { useFavorites } from "../context/FavoriteContext";
+import "../styles/FavoriteCardsGrid.css";
 import Card from "./Card";
 import games from "../data/juegos.json";
 

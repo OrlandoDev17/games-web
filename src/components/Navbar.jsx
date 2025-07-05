@@ -36,10 +36,12 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <FaGamepad size={28} color="#7B6EF6" style={{ marginRight: 8 }} />
-          <span className="navbar-title">GameHub</span>
-        </Link>
+        <picture>
+          <Link to="/" className="navbar-logo">
+            <FaGamepad size={28} color="#7B6EF6" style={{ marginRight: 8 }} />
+            <span className="navbar-title">GameHub</span>
+          </Link>
+        </picture>
 
         <input type="checkbox" id="menu-toggle" className="menu-toggle" />
         <label htmlFor="menu-toggle" className="menu-icon">
@@ -59,9 +61,11 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <Link to="/auth" className="navbar-btn">
-            <FaUser /> Iniciar Sesión
-          </Link>
+          <div>
+            <Link to="/auth" className="navbar-btn">
+              <FaUser /> Iniciar Sesión
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

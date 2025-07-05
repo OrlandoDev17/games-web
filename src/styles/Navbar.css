@@ -1,20 +1,13 @@
 .navbar {
   width: 100%;
-  background: #202938;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #202938;
 }
 
 .navbar-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+  padding: 20px 60px;
 }
 
 .navbar-logo {
@@ -110,7 +103,7 @@
     margin: 0;
     max-width: 100%;
   }
-  
+
   .navbar-links {
     flex-direction: column;
     width: 100%;
