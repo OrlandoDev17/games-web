@@ -12,7 +12,7 @@ const GENRES = [
   "JRPG",
 ];
 
-export default function Filters({ changeFilters }) {
+export default function Filters({ changeFilters, currentSearch = "" }) {
   const handleGenreChange = (event) => {
     changeFilters((prevFilters) => ({
       ...prevFilters,
@@ -31,8 +31,19 @@ export default function Filters({ changeFilters }) {
     <div className="filters">
       <h3>Filtros</h3>
       <form className="filters-form">
-        <search className="search-filter">
-          <input type="search" placeholder="Buscar Juegos..." id="search" />
+        <div className="search-filter">
+          <input 
+            type="search" 
+            placeholder="Buscar Juegos..." 
+            id="search"
+            value={currentSearch}
+            onChange={(e) => {
+              changeFilters(prevFilters => ({
+                ...prevFilters,
+                search: e.target.value
+              }));
+            }}
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -49,7 +60,7 @@ export default function Filters({ changeFilters }) {
             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
             <path d="M21 21l-6 -6" />
           </svg>
-        </search>
+        </div>
         <select
           className="select-filter"
           id="genre"

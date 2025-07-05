@@ -1,4 +1,11 @@
-import { FaGamepad, FaHome, FaRegStar, FaThList, FaUser } from "react-icons/fa";
+import {
+  FaGamepad,
+  FaHome,
+  FaRegStar,
+  FaThList,
+  FaUser,
+  FaBars,
+} from "react-icons/fa";
 import { useLocation, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
@@ -28,25 +35,35 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-logo">
-        <FaGamepad size={28} color="#7B6EF6" style={{ marginRight: 8 }} />
-        <span className="navbar-title">GameHub</span>
-      </Link>
-      <div className="navbar-links">
-        {navItems.map((item) => (
-          <Link
-            key={item.key}
-            to={item.path}
-            className={`navbar-link ${isActive(item.path) ? "active" : ""}`}
-          >
-            {item.icon}
-            {item.label}
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo">
+          <FaGamepad size={28} color="#7B6EF6" style={{ marginRight: 8 }} />
+          <span className="navbar-title">GameHub</span>
+        </Link>
+
+        <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+        <label htmlFor="menu-toggle" className="menu-icon">
+          <FaBars />
+        </label>
+
+        <div className="navbar-content">
+          <div className="navbar-links">
+            {navItems.map((item) => (
+              <Link
+                key={item.key}
+                to={item.path}
+                className={`navbar-link ${isActive(item.path) ? "active" : ""}`}
+              >
+                {item.icon}
+                {item.label}
+              </Link>
+            ))}
+          </div>
+          <Link to="/auth" className="navbar-btn">
+            <FaUser /> Iniciar Sesión
           </Link>
-        ))}
+        </div>
       </div>
-      <Link to="/auth" className="navbar-btn">
-        <FaUser /> Iniciar Sesión
-      </Link>
     </nav>
   );
 }

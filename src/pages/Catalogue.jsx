@@ -1,68 +1,108 @@
 import "../styles/Catalogue.css";
 import Filters from "../components/Filters";
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import GAMES from "../data/juegos.json";
 import Card from "../components/Card";
 
+/**
+ * Componente principal del catálogo de juegos.
+ * Muestra una lista filtrable de juegos con opciones de búsqueda y filtrado.
+ */
 export default function Catalogue() {
-  const [games] = useState(GAMES);
   const [filters, setFilters] = useState({
     genre: "all",
     platform: "all",
+    search: "",
   });
-  const filterGames = (games) => {
-    return games.filter((game) => {
-      // Verificar el filtro de género
-      const genreMatch =
-        filters.genre === "all" || game.genre === filters.genre;
 
-      // Verificar el filtro de plataforma
-      let platformMatch = false;
-      if (filters.platform === "all") {
-        platformMatch = true;
-      } else if (Array.isArray(game.platform)) {
-        // Si la plataforma es un array, verificar si incluye la plataforma seleccionada
-        platformMatch = game.platform.some(
-          (platform) =>
-            typeof platform === "string" &&
-            platform.toLowerCase().includes(filters.platform.toLowerCase())
-        );
-      } else {
-        // Si es un string, comparar directamente
-        platformMatch = game.platform
-          .toLowerCase()
-          .includes(filters.platform.toLowerCase());
-      }
+  const filterGames = useCallback(
+    (games) => {
+      const searchTerm = filters.search.toLowerCase();
+      const platformTerm = filters.platform.toLowerCase();
 
-      // Deben coincidir ambos filtros
-      return genreMatch && platformMatch;
-    });
-  };
+      return games.filter((game) => {
+        const genreMatch =
+          filters.genre === "all" || game.genre === filters.genre;
 
-  const filteredGames = filterGames(games);
+        let platformMatch = false;
+        if (filters.platform === "all") {
+          platformMatch = true;
+        } else if (Array.isArray(game.platform)) {
+          platformMatch = game.platform.some(
+            (platform) =>
+              typeof platform === "string" &&
+              platform.toLowerCase().includes(platformTerm)
+          );
+        } else {
+          platformMatch = game.platform.toLowerCase().includes(platformTerm);
+        }
+
+        const searchMatch = game.name.toLowerCase().includes(searchTerm);
+        return genreMatch && platformMatch && searchMatch;
+      });
+    },
+    [filters.genre, filters.platform, filters.search]
+  );
+
+  const filteredGames = useMemo(() => {
+    return filterGames(GAMES);
+  }, [filterGames]);
 
   return (
-    <section className="catalogue-container">
+    <section
+      className="catalogue-container"
+      role="main"
+      aria-label="Catálogo de juegos"
+    >
       <header className="catalogue-header">
-        <h2>Catálogo de Juegos</h2>
-        <p>Descubre y descarga tu proximo juego favorito gratis</p>
+        <h1 className="catalogue-title">Catálogo de Juegos</h1>
+        <p className="catalogue-description">
+          Descubre y descarga tu próximo juego favorito gratis
+        </p>
       </header>
-      <Filters changeFilters={setFilters} />
-      <div className="catalogue-grid">
-        {filteredGames.map(
-          ({ id, name, image, rating, developers, genre, year, platform }) => (
-            <Card
-              key={id}
-              id={id}
-              image={image}
-              rating={rating}
-              name={name}
-              developers={developers}
-              genre={genre}
-              year={year}
-              platform={platform}
-            />
+
+      <Filters changeFilters={setFilters} currentSearch={filters.search} />
+
+      <div className="catalogue-grid" role="list" aria-label="Lista de juegos">
+        {filteredGames.length > 0 ? (
+          filteredGames.map(
+            ({
+              id,
+              name,
+              image,
+              rating,
+              developers,
+              genre,
+              year,
+              platform,
+            }) => (
+              <article
+                key={id}
+                className="game-card"
+                role="listitem"
+                itemScope
+                itemType="https://schema.org/VideoGame"
+              >
+                <Card
+                  id={id}
+                  image={image}
+                  rating={rating}
+                  name={name}
+                  developers={developers}
+                  genre={genre}
+                  year={year}
+                  platform={platform}
+                />
+              </article>
+            )
           )
+        ) : (
+          <div className="no-results">
+            <p>
+              No se encontraron juegos que coincidan con los filtros
+              seleccionados.
+            </p>
+          </div>
         )}
       </div>
     </section>
