@@ -42,7 +42,7 @@ export default function Favorites() {
             </p>
 
             <div>
-              <a href="/Catalogue" className="button-catalogue">
+              <a href="/catalogue" className="button-catalogue">
                 Explorar Catálogo
               </a>
             </div>
