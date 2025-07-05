@@ -7,11 +7,11 @@ export default function Favorites() {
     <section className="favorite-page">
       <h2>Mis Favoritos</h2>
       <p className="subtitle">
-        {favorites.length === 1
+        {favorites.length === 0
           ? "Aun no tienes juegos en Favoritos"
-          : `tienes ${favorites.length - 1} Juegos en Favoritos`}
+          : `tienes ${favorites.length} Juegos en Favoritos`}
       </p>
-      {favorites.length === 1 ? (
+      {favorites.length === 0 ? (
         <>
           <div className="center-icon-svg">
             <div className="icon-svg">
