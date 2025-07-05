@@ -1,0 +1,129 @@
+.texto-parte1{
+    color: white;
+    text-align: center;
+}
+.texto-parte2{
+    color: blue;
+    text-align: center;
+}
+.texto-bajo-home {
+    color: white;
+    text-align: center;
+}
+.title-home {
+    text-align: center;
+  }
+.boton-home {
+    margin-Top: 0 10px;
+    padding: 10px 20px;
+    background-color: #181c24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s, color 0.2s;
+    margin: 10px;
+}
+
+.boton-home:hover {
+    background-color: #3b4cca;
+}
+
+.bajo-boton-home {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 5px 60px;
+    box-sizing: border-box;
+}
+
+.botones-contenerdor-home {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.title-home {
+    text-align: center;
+}
+  
+.botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap ;
+}
+  
+.imagen-item {
+    text-align: center;
+    margin: 0 10px;
+    color: white;
+}
+  
+.imagen-redonda {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+  
+.titulo-adicional {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.pc-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .botones-contenerdor-home {
+        flex-direction: column ;
+    }
+    
+    .imagen-redonda {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .title-home {
+        font-size: 24px;
+    }
+    
+      .texto-bajo-home p {
+        font-size: 14px;
+    }
+    
+      .titulo-adicional {
+        font-size: 18px;
+    }
+}
+
+/* 
+.botones-contenerdor-home {
+  text-align: center; 
+  
+  
+  
+  */
